@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root {
+    --blackOpacity: rgb(26, 27, 26, 0.9);
+    --white: #ffffff;
+    --corPrincipal: #31357B;
+    --corSecondary: #392E6D;
+    --corVariacao1: #e45e38;
+    --corTexto: #8a8989;
+    --corTitle: #000;
+}
+
 body {
-    background-image: url("../images/fundo.jpeg");
+    background: url("../images/fundo.jpeg");
     background-size: cover;
     color: white;
     text-align: right;
@@ -61,4 +71,21 @@ ul li a:hover {
 .botao:hover {
     background-color: #a69fc9;
     opacity: 0.7;
+}
+
+
+/*Responsive*/
+
+@media (max-width: 640px) {
+    body {
+        background: var(--corPrincipal);
+        text-align: center;
+    }
+    h1 {
+        font-size: 72px;
+        padding-top: 180px;
+    }
+    p {
+        font-size: 30px;
+    }
 }
